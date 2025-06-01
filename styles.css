@@ -1,0 +1,177 @@
+/* Reset and font setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Promixa Nova', Avenir;
+  color: #1a1a1a;
+  background-color: #fff7e1;
+}
+
+/* Hero section */
+.hero {
+  background-image: url('https://raw.githubusercontent.com/2prettyy-trinityy/Charity-Water-Landing-Page/main/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-border {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.top-border {
+  background-color: white;
+  justify-content: flex-start;
+}
+
+.bottom-border {
+  background-color: #fff7e1;
+}
+
+.top-border img {
+  height: 40px;
+  width: auto;
+}
+
+.hero-content {
+  padding: 0 80px;
+  color: white;
+  text-align: left;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.hero h1 {
+  font-size: 3em;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.donate-btn {
+  background-color: #ffc907;
+  color: black;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.donate-btn:hover {
+  background-color: #ffc907;
+}
+
+
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .overlay {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .hero-text h1 {
+    font-size: 2em;
+  }
+
+  .donation-box {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+/* -------------------------------------------
+   📱 MEDIA QUERIES FOR RESPONSIVE DESIGN
+   These styles improve layout and readability 
+   on smaller screens like tablets and phones.
+-------------------------------------------- */
+@media (max-width: 768px) {
+  /* HERO section: resize text and button for mobile */
+  .hero h1 {
+    font-size: 2em; /* smaller headline on mobile */
+  }
+
+  .hero p {
+    font-size: 1em; /* more readable paragraph */
+  }
+
+  .donate-btn {
+    font-size: 0.95em;
+    padding: 12px 24px;
+  }
+
+  .hero {
+    align-items: center;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+.hero-content {
+  padding: 30px;
+  text-align: center;
+}
+
+  /* IMPACT STORY section: stack image and text vertically */
+  .impact-content {
+    flex-direction: column; /* stack instead of side-by-side */
+    text-align: center;     /* center text on small screens */
+  }
+
+  
+
+  .impact-text h2 {
+    font-size: 1.5em;
+  }
+
+  .impact-text p {
+    font-size: 1em;
+  }
+
+}
+.logo-box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border: 2px solid #ffc907; /* Yellow border */
+  padding: 10px;
+  background-color: white;
+  z-index: 1000;
+}
+
+.logo-box img {
+  width: 100px;
+  height: auto;
+}
