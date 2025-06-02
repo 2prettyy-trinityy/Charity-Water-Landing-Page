@@ -1,0 +1,105 @@
+/* Reset and font setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Proxima Nova', Avenir;
+  background-color: #fff7e1;
+  color: #1a1a1a;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  background-image: url('https://raw.githubusercontent.com/2prettyy-trinityy/Charity-Water-Landing-Page/main/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh; /* slightly less than full screen */
+}
+
+.hero-content {
+  padding: 80px;
+  color: white;
+  text-align: left; /* ← LEFT-ALIGNED HEADLINE */
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  color: #ffc907;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.donate-btn {
+  background-color: #ffc907;
+  color: black;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.hero-border.top-border {
+  background-color: white;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.hero-border.bottom-border {
+  background-color: #fff7e1;
+  height: 60px;
+}
+
+/* IMPACT SECTION (clean background, not over image) */
+.impact-section {
+  background-color: #fff7e1;
+  padding: 40px 80px;
+}
+
+.impact-content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  color: #1a1a1a;
+}
+
+.impact-content h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.impact-content p {
+  font-size: 1.1em;
+}
+
+
+
+
+.logo-box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border: 2px solid #ffc907; /* Yellow border */
+  padding: 10px;
+  background-color: white;
+  z-index: 1000;
+}
+
+.logo-box img {
+  width: 100px;
+  height: auto;
+}
